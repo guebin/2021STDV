@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://guebin.github.io/STDV2021/about/</loc>
+<loc>https://guebin.github.io/2021STDV/about/</loc>
 </url>
 <url>
-<loc>https://guebin.github.io/STDV2021/</loc>
+<loc>https://guebin.github.io/2021STDV/</loc>
 </url>
 <url>
-<loc>https://guebin.github.io/STDV2021/search/</loc>
+<loc>https://guebin.github.io/2021STDV/search/</loc>
 </url>
 <url>
-<loc>https://guebin.github.io/STDV2021/categories/</loc>
+<loc>https://guebin.github.io/2021STDV/categories/</loc>
 </url>
 </urlset>
