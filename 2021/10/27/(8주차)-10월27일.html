@@ -4,18 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>데이터시각화특강 (전북대학교 2021년 2학기) | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>(8주차) 10월27일 | 데이터시각화특강 (전북대학교 2021년 2학기)</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="데이터시각화특강 (전북대학교 2021년 2학기)" />
+<meta property="og:title" content="(8주차) 10월27일" />
+<meta name="author" content="최규빈" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://guebin.github.io/2021STDV/" />
-<meta property="og:url" content="https://guebin.github.io/2021STDV/" />
+<meta name="description" content="groupby" />
+<meta property="og:description" content="groupby" />
+<link rel="canonical" href="https://guebin.github.io/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html" />
+<meta property="og:url" content="https://guebin.github.io/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html" />
 <meta property="og:site_name" content="데이터시각화특강 (전북대학교 2021년 2학기)" />
-<meta property="og:image" content="https://guebin.github.io/2021STDV/images/logo.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-10-27T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"An easy to use blogging platform with support for Jupyter Notebooks.","url":"https://guebin.github.io/2021STDV/","@type":"WebSite","headline":"데이터시각화특강 (전북대학교 2021년 2학기)","image":"https://guebin.github.io/2021STDV/images/logo.png","name":"데이터시각화특강 (전북대학교 2021년 2학기)","@context":"https://schema.org"}</script>
+{"description":"groupby","url":"https://guebin.github.io/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html","@type":"BlogPosting","headline":"(8주차) 10월27일","dateModified":"2021-10-27T00:00:00-05:00","datePublished":"2021-10-27T00:00:00-05:00","author":{"@type":"Person","name":"최규빈"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/2021STDV/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://guebin.github.io/2021STDV/feed.xml" title="데이터시각화특강 (전북대학교 2021년 2학기)" /><link rel="shortcut icon" type="image/x-icon" href="/2021STDV/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -83,79 +85,96 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><h1 id="lecture">Lecture</h1>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">(8주차) 10월27일</h1><p class="page-description">groupby</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-10-27T00:00:00-05:00" itemprop="datePublished">
+        Oct 27, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">최규빈</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/guebin/2021STDV/tree/master/_notebooks/2021-10-27-(8주차) 10월27일.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/2021STDV/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/guebin/2021STDV/master?filepath=_notebooks%2F2021-10-27-%288%EC%A3%BC%EC%B0%A8%29+10%EC%9B%9427%EC%9D%BC.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/2021STDV/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/guebin/2021STDV/blob/master/_notebooks/2021-10-27-(8주차) 10월27일.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/2021STDV/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h4"><a href="#숙제">숙제 </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-10-27-(8주차) 10월27일.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="숙제">
+<a class="anchor" href="#%EC%88%99%EC%A0%9C" aria-hidden="true"><span class="octicon octicon-link"></span></a>숙제<a class="anchor-link" href="#%EC%88%99%EC%A0%9C"> </a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>구간을</p>
+
+<pre><code>bins=[-np.inf, 400, 700, 1200, np.inf]</code></pre>
+<p>이 아니라</p>
+
+<pre><code>bins=[-np.inf, 400, 600, 800, 1000, 1200, np.inf]</code></pre>
+<p>와 같이 나누고 적당한 각구간별로 해당하는 관측치의 수를 구하라.</p>
+
+</div>
+</div>
+</div>
+</div>
 
 
 
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/2021STDV/2021/11/01/(8%EC%A3%BC%EC%B0%A8)-11%EC%9B%941%EC%9D%BC.html">
-    (8주차) 11월1일
-    </a>
-</h3><p class="post-meta-description">groupby, tidydata, barplot, 해들리위컴의 그래프레이어, 심슨의역설</p><p class="post-meta">Nov 1, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html">
-    (8주차) 10월27일
-    </a>
-</h3><p class="post-meta-description">groupby</p><p class="post-meta">Oct 27, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/10/25/(7%EC%A3%BC%EC%B0%A8)-10%EC%9B%9425%EC%9D%BC.html">
-    (7주차) 10월25일
-    </a>
-</h3><p class="post-meta-description">Partial correlation, 행을선택하는 방법, fifa22자료 시각화</p><p class="post-meta">Oct 25, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/10/18/(6%EC%A3%BC%EC%B0%A8)-10%EC%9B%9418%EC%9D%BC.html">
-    (6주차) 10월18일
-    </a>
-</h3><p class="post-meta-description">해들리위컴 그래프레이어, 판다스에서 열을 선택하는 방법</p><p class="post-meta">Oct 18, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/10/12/(5%EC%A3%BC%EC%B0%A8)-10%EC%9B%9412%EC%9D%BC.html">
-    (5주차) 10월12일
-    </a>
-</h3><p class="post-meta-description">qqplot, lambda, map, 애드워드 터프티, 찰스미나드의 도표</p><p class="post-meta">Oct 12, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/10/05/(4%EC%A3%BC%EC%B0%A8)-10%EC%9B%945%EC%9D%BC.html">
-    (4주차) 10월5일
-    </a>
-</h3><p class="post-meta-description">액시즈, 타이틀설정, 축범위설정, 상관계수, 독립, seaborn + matplotlib , qqplot motive</p><p class="post-meta">Oct 5, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/09/27/(3%EC%A3%BC%EC%B0%A8)-9%EC%9B%9427%EC%9D%BC.html">
-    (3주차) 9월27일
-    </a>
-</h3><p class="post-meta-description">이미지 자료에 대한 이해, 산점도, 상관계수</p><p class="post-meta">Sep 27, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/09/13/(2%EC%A3%BC%EC%B0%A8)-9%EC%9B%9413%EC%9D%BC.html">
-    (2주차) 9월13일
-    </a>
-</h3><p class="post-meta-description">박스플랏, 히스토그램, 히스토그램 평활화</p><p class="post-meta">Sep 13, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/09/06/(1%EC%A3%BC%EC%B0%A8)-9%EC%9B%946%EC%9D%BC.html">
-    (1주차) 9월6일
-    </a>
-</h3><p class="post-meta-description">데이터시각화소개, 강의소개, 주피터랩설치</p><p class="post-meta">Sep 6, 2021</p>
-</li><li><h3>
-    <a class="post-link" href="/2021STDV/2021/08/17/(A1)-%EA%B9%83%ED%97%88%EB%B8%8C%EC%99%80-fastpages%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EA%B0%9C%EC%84%A4%ED%95%98%EA%B8%B0.html">
-    (A1) 깃허브와 fastpages를 이용하여 블로그 개설하기
-    </a>
-</h3><p class="post-meta-description">Awesome summary</p><p class="post-meta">Aug 17, 2021</p>
-</li></ul>
-
-    </div>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="guebin/2021STDV"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/2021STDV/2021/10/27/(8%EC%A3%BC%EC%B0%A8)-10%EC%9B%9427%EC%9D%BC.html" hidden></a>
+</article>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/2021STDV/"></data>
