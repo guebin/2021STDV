@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>기말고사 예상문제 (ver 0.1) | 데이터시각화특강 (전북대학교 2021년 2학기)</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="기말고사 예상문제 (ver 0.1)" />
+<meta name="author" content="최규빈" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://guebin.github.io/2021STDV/2021/12/03/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC-%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.html" />
+<meta property="og:url" content="https://guebin.github.io/2021STDV/2021/12/03/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC-%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.html" />
+<meta property="og:site_name" content="데이터시각화특강 (전북대학교 2021년 2학기)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-03T00:00:00-06:00" />
+<script type="application/ld+json">
+{"description":"An easy to use blogging platform with support for Jupyter Notebooks.","url":"https://guebin.github.io/2021STDV/2021/12/03/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC-%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.html","@type":"BlogPosting","headline":"기말고사 예상문제 (ver 0.1)","dateModified":"2021-12-03T00:00:00-06:00","datePublished":"2021-12-03T00:00:00-06:00","author":{"@type":"Person","name":"최규빈"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://guebin.github.io/2021STDV/2021/12/03/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC-%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/2021STDV/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://guebin.github.io/2021STDV/feed.xml" title="데이터시각화특강 (전북대학교 2021년 2학기)" /><link rel="shortcut icon" type="image/x-icon" href="/2021STDV/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/2021STDV/">데이터시각화특강 (전북대학교 2021년 2학기)</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/2021STDV/about/">About Me</a><a class="page-link" href="/2021STDV/search/">Search</a><a class="page-link" href="/2021STDV/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">기말고사 예상문제 (ver 0.1)</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-12-03T00:00:00-06:00" itemprop="datePublished">
+        Dec 3, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">최규빈</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/guebin/2021STDV/tree/master/_notebooks/2021-12-03-데이터시각화 기말고사 예상문제.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/2021STDV/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/guebin/2021STDV/master?filepath=_notebooks%2F2021-12-03-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94+%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC+%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/2021STDV/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/guebin/2021STDV/blob/master/_notebooks/2021-12-03-데이터시각화 기말고사 예상문제.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/2021STDV/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="##1.-COVID19-시도별-접종률-시각화">#1. COVID19 시도별 접종률 시각화 </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-12-03-데이터시각화 기말고사 예상문제.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="#1.-COVID19-시도별-접종률-시각화">
+<a class="anchor" href="##1.-COVID19-%EC%8B%9C%EB%8F%84%EB%B3%84-%EC%A0%91%EC%A2%85%EB%A5%A0-%EC%8B%9C%EA%B0%81%ED%99%94" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>#1</code>. COVID19 시도별 접종률 시각화<a class="anchor-link" href="##1.-COVID19-%EC%8B%9C%EB%8F%84%EB%B3%84-%EC%A0%91%EC%A2%85%EB%A5%A0-%EC%8B%9C%EA%B0%81%ED%99%94"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>아래의 그림은 COVID19 예방접종의 시도별 현황을 캡쳐한 것이다.</p>
+<p><img src="https://github.com/guebin/2021DV/blob/master/_notebooks/final_FIG1.png?raw=true" alt="" title="그림1: COVID19 예방접종의 시도별 현황"></p>
+<p>이 정보는 특정 주기로 업데이트 되며 아래의 웹페이지 2번째 테이블에서 확인할 수 있다.</p>
+
+<pre><code>https://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000</code></pre>
+<p>판다스의 <code>pd.read_html()</code> 함수를 이용해 위의 페이지에서 그림1의 테이블을 읽어오라. 그리고 folium의 choroplethmap을 활용하여 시도별 2차접종의 접종률을 시각화 하라. 시각화 예시는 그림2와 같다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://github.com/guebin/2021DV/blob/master/_notebooks/final_FIG2.png?raw=true" alt="" title="그림2: 문제1의 답안예시"></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<hr>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>힌트1.</strong> pd.read_html()을 이용할때 <code>encoding='uft-8'</code>옵션을 사용하라.</p>
+<p><strong>힌트2.</strong> <code>https://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000</code>의 2번째 테이블을 판다스로 읽어온 결과는 아래와 같아야 한다.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dfhtml</span><span class="o">=</span><span class="s1">'&lt;table border="1" class="dataframe"&gt;</span><span class="se">\n</span><span class="s1">  &lt;thead&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;구분&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th colspan="2" halign="left"&gt;1차접종&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th colspan="2" halign="left"&gt;2차접종&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th colspan="2" halign="left"&gt;3차(부스터)접종&lt;/th&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;구분&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 실적&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 누계&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 실적&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 누계&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 실적&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;당일 누계&lt;/th&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">  &lt;/thead&gt;</span><span class="se">\n</span><span class="s1">  &lt;tbody&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;0&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;합계&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;22505&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;42618296&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;60388&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;41192348&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;179831&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;3570414&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;1&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;서울&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;3613&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;7933770&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;8315&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;7698119&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;34397&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;649999&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;2&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;부산&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1355&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2724073&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2942&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2631501&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;11161&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;209295&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;3&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;대구&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;925&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1895746&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2485&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1830009&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;7258&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;130330&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;4&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;인천&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1331&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2430994&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;3781&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2346905&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;9049&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;183461&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;5&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;광주&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;669&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1190287&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2190&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1143284&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;4852&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;108004&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;6&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;대전&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;659&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1173714&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1692&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1132714&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;5326&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;92697&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;7&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;울산&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;527&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;908812&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1657&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;879965&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;3311&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;59007&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;8&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;세종&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;146&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;272339&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;357&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;261860&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;989&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;22115&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;9&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경기&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;6180&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;11154058&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;16579&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;10788551&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;39809&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;876808&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;10&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;강원&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;718&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1279589&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2076&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1237178&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;6373&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;118575&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;11&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;충북&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;668&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1352302&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2529&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1307212&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;6536&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;124993&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;12&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;충남&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;952&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1789964&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2610&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1725422&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;8595&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;170692&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;13&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;전북&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;755&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1514759&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2705&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1460057&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;9037&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;160277&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;14&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;전남&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;792&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1575741&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2498&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1520694&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;9319&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;199860&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;15&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경북&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1255&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2160015&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2942&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2085263&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;9743&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;193965&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;16&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경남&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1510&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2712518&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;3997&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2614451&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;11699&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;226671&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;17&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;제주&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;450&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;549615&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;1033&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;529163&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;2377&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;43665&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">  &lt;/tbody&gt;</span><span class="se">\n</span><span class="s1">&lt;/table&gt;'</span>
+<span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="n">dfhtml</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>구분</th>
+      <th colspan="2" halign="left">1차접종</th>
+      <th colspan="2" halign="left">2차접종</th>
+      <th colspan="2" halign="left">3차(부스터)접종</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>구분</th>
+      <th>당일 실적</th>
+      <th>당일 누계</th>
+      <th>당일 실적</th>
+      <th>당일 누계</th>
+      <th>당일 실적</th>
+      <th>당일 누계</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>합계</td>
+      <td>22505</td>
+      <td>42618296</td>
+      <td>60388</td>
+      <td>41192348</td>
+      <td>179831</td>
+      <td>3570414</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>서울</td>
+      <td>3613</td>
+      <td>7933770</td>
+      <td>8315</td>
+      <td>7698119</td>
+      <td>34397</td>
+      <td>649999</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>부산</td>
+      <td>1355</td>
+      <td>2724073</td>
+      <td>2942</td>
+      <td>2631501</td>
+      <td>11161</td>
+      <td>209295</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>대구</td>
+      <td>925</td>
+      <td>1895746</td>
+      <td>2485</td>
+      <td>1830009</td>
+      <td>7258</td>
+      <td>130330</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>인천</td>
+      <td>1331</td>
+      <td>2430994</td>
+      <td>3781</td>
+      <td>2346905</td>
+      <td>9049</td>
+      <td>183461</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>광주</td>
+      <td>669</td>
+      <td>1190287</td>
+      <td>2190</td>
+      <td>1143284</td>
+      <td>4852</td>
+      <td>108004</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>대전</td>
+      <td>659</td>
+      <td>1173714</td>
+      <td>1692</td>
+      <td>1132714</td>
+      <td>5326</td>
+      <td>92697</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>울산</td>
+      <td>527</td>
+      <td>908812</td>
+      <td>1657</td>
+      <td>879965</td>
+      <td>3311</td>
+      <td>59007</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>세종</td>
+      <td>146</td>
+      <td>272339</td>
+      <td>357</td>
+      <td>261860</td>
+      <td>989</td>
+      <td>22115</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>경기</td>
+      <td>6180</td>
+      <td>11154058</td>
+      <td>16579</td>
+      <td>10788551</td>
+      <td>39809</td>
+      <td>876808</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>강원</td>
+      <td>718</td>
+      <td>1279589</td>
+      <td>2076</td>
+      <td>1237178</td>
+      <td>6373</td>
+      <td>118575</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>충북</td>
+      <td>668</td>
+      <td>1352302</td>
+      <td>2529</td>
+      <td>1307212</td>
+      <td>6536</td>
+      <td>124993</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>충남</td>
+      <td>952</td>
+      <td>1789964</td>
+      <td>2610</td>
+      <td>1725422</td>
+      <td>8595</td>
+      <td>170692</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>전북</td>
+      <td>755</td>
+      <td>1514759</td>
+      <td>2705</td>
+      <td>1460057</td>
+      <td>9037</td>
+      <td>160277</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>전남</td>
+      <td>792</td>
+      <td>1575741</td>
+      <td>2498</td>
+      <td>1520694</td>
+      <td>9319</td>
+      <td>199860</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>경북</td>
+      <td>1255</td>
+      <td>2160015</td>
+      <td>2942</td>
+      <td>2085263</td>
+      <td>9743</td>
+      <td>193965</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>경남</td>
+      <td>1510</td>
+      <td>2712518</td>
+      <td>3997</td>
+      <td>2614451</td>
+      <td>11699</td>
+      <td>226671</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>제주</td>
+      <td>450</td>
+      <td>549615</td>
+      <td>1033</td>
+      <td>529163</td>
+      <td>2377</td>
+      <td>43665</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>위의 df는 예시일 뿐이며 시간에 따라 정보가 업데이트 되어 달라질 수 있음 </li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>힌트3.</strong> 아래의 주소에서 json을 파일을 읽어온뒤 choroplethmap을 그릴때 이용하라.</p>
+
+<pre><code>https://raw.githubusercontent.com/southkorea/southkorea-maps/master/kostat/2018/json/skorea-provinces-2018-geo.json</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>힌트4.</strong> 아래의 코드를 활용하여 json파일의 지역명과 <code>https://ncv.kdca.go.kr/mainStatus.es?mid=a11702000000</code>의 지역이름을 맞추어라.</p>
+<div class="highlight"><pre><span></span><span class="p">[</span><span class="n">global_dict</span><span class="p">[</span><span class="s1">'features'</span><span class="p">][</span><span class="n">i</span><span class="p">][</span><span class="s1">'properties'</span><span class="p">][</span><span class="s1">'name'</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">17</span><span class="p">)]</span>
+</pre></div>
+
+<pre><code>['서울특별시',
+ '부산광역시',
+ '대구광역시',
+ '인천광역시',
+ '광주광역시',
+ '대전광역시',
+ '울산광역시',
+ '세종특별자치시',
+ '경기도',
+ '강원도',
+ '충청북도',
+ '충청남도',
+ '전라북도',
+ '전라남도',
+ '경상북도',
+ '경상남도',
+ '제주특별자치도']</code></pre>
+<p>여기에서 <code>global_dict</code>는 json파일을 dict의 형태로 저장한 변수명이다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>힌트5.</strong> 지역별 접종률은 아래의 수식을 따른다.</p>
+$$
+\textbf{서울특별시 2차접종 접종률}=\frac{\textbf{서울특별시 2차접종 당일누계}}{\textbf{서울특별시 인구수}}
+$$<p>시도별 인구수는 아래의 주소에서 얻을 수 있다.</p>
+
+<pre><code>https://raw.githubusercontent.com/guebin/2021DV/master/_notebooks/2021-11-22-prov.csv</code></pre>
+<p><strong><em>강의노트 참고해보세요!!</em></strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>힌트6.</strong> 시도별 접종률의 결과는 아래와 같다.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IPython</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="s1">'&lt;table border="1" class="dataframe"&gt;</span><span class="se">\n</span><span class="s1">  &lt;thead&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr style="text-align: right;"&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;prov&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;prop&lt;/th&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">  &lt;/thead&gt;</span><span class="se">\n</span><span class="s1">  &lt;tbody&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;0&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;서울특별시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.807572&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;1&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;부산광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.784046&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;2&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;대구광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.765463&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;3&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;인천광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.796909&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;4&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;광주광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.792597&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;5&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;대전광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.778911&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;6&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;울산광역시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.783887&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;7&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;세종특별자치시&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.711043&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;8&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경기도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.796228&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;9&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;강원도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.804555&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;10&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;충청북도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.818569&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;11&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;충청남도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.814271&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;12&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;전라북도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.815779&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;13&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;전라남도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.828873&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;14&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경상북도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.793502&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;15&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;경상남도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.787922&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">    &lt;tr&gt;</span><span class="se">\n</span><span class="s1">      &lt;th&gt;16&lt;/th&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;제주특별자치도&lt;/td&gt;</span><span class="se">\n</span><span class="s1">      &lt;td&gt;0.782127&lt;/td&gt;</span><span class="se">\n</span><span class="s1">    &lt;/tr&gt;</span><span class="se">\n</span><span class="s1">  &lt;/tbody&gt;</span><span class="se">\n</span><span class="s1">&lt;/table&gt;'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+    </details>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>prov</th>
+      <th>prop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>서울특별시</td>
+      <td>0.807572</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>부산광역시</td>
+      <td>0.784046</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>대구광역시</td>
+      <td>0.765463</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>인천광역시</td>
+      <td>0.796909</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>광주광역시</td>
+      <td>0.792597</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>대전광역시</td>
+      <td>0.778911</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>울산광역시</td>
+      <td>0.783887</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>세종특별자치시</td>
+      <td>0.711043</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>경기도</td>
+      <td>0.796228</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>강원도</td>
+      <td>0.804555</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>충청북도</td>
+      <td>0.818569</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>충청남도</td>
+      <td>0.814271</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>전라북도</td>
+      <td>0.815779</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>전라남도</td>
+      <td>0.828873</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>경상북도</td>
+      <td>0.793502</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>경상남도</td>
+      <td>0.787922</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>제주특별자치도</td>
+      <td>0.782127</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {}, "version_major": 2, "version_minor": 0}
+</script>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="guebin/2021STDV"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/2021STDV/2021/12/03/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8B%9C%EA%B0%81%ED%99%94-%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC-%EC%98%88%EC%83%81%EB%AC%B8%EC%A0%9C.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/2021STDV/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/2021STDV/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/2021STDV/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/2021STDV/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/2021STDV/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
